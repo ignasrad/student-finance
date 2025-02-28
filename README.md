@@ -1,6 +1,11 @@
-# Getting Started with Create React App
+# Student Finance Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React application for processing student loan statements. The application allows users to:
+
+- Upload PDF statements from student loan providers
+- Process and analyze loan data 
+- Generate Excel reports with detailed loan information
+- Convert between GBP and EUR using ECB exchange rates
 
 ## Available Scripts
 
@@ -29,18 +34,33 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Key Features
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- PDF parsing of student loan statements
+- Calculation of loan vs. interest portions
+- Currency conversion using ECB exchange rates
+- Excel report generation with detailed breakdowns
+- Support for multiple statement uploads
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Technical Implementation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The application uses:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- React for the frontend
+- TypeScript for type safety
+- PDF.js for PDF parsing
+- ExcelJS for Excel file generation
+- ECB API for exchange rate data
 
-## Learn More
+## Project Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- `src/models/` - Data models for loan entities
+- `src/services/` - Business logic services
+- `src/components/` - React components
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Getting Started
+
+1. Clone the repository
+2. Run `npm install` to install dependencies
+3. Run `npm start` to start the development server
+4. Upload PDF statements to generate Excel reports
